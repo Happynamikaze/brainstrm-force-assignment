@@ -41,7 +41,8 @@ function AppContentDisplay({ data }) {
               alt={item.missions[0]?.name}
             />
             <p>{item.missions[0]?.name}</p>
-            <button onClick={() => handleItemClick(item)}>View Details</button>
+            <button onClick={() => handleItemClick(item)} class="button-57" role="button"  onClick={handleSearch}><span class="text">View Details</span><span>Click me!!!</span></button>
+{/*             <button onClick={() => handleItemClick(item)}>View Details</button> */}
           </div>
         ))}
       </div>
