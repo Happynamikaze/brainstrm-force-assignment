@@ -1,0 +1,181 @@
+
+.main-div {
+  background-color: #000 !important;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+}
+.data-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #000;  
+  padding: 20px;
+  color: #fff; /* Text color */
+  justify-content: center;
+  align-content: flex-start;
+}
+input {
+  border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px 10px;
+}
+
+
+
+.button-57 {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 10px 25px ;
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+.grid-item {
+  background-color: #333; 
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  flex: 0 0 calc(25% - 20px);
+  margin-bottom: 20px;
+  border-radius: 0; 
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  animation: running-border-shadow 3s linear infinite, sparkle 1s infinite;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.grid-item button {
+  background-color: #111;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+
+.pagination {
+  text-align: center;
+}
+
+.pagination button {
+  background-color: #333; 
+  color: #fff; 
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.pagination button:hover {
+  background-color: #555; 
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px); 
+}
+
+
+.popup-content {
+  background-color: #333;
+  color: #fff;
+  padding: 10px; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  position: relative;
+  max-width: 400px; 
+  width: 80%; 
+  animation: running-border-shadow 3s linear infinite, sparkle 1s infinite;
+}
+
+.popup-content img{
+width: 80%;
+}
+
+/* Style for the close button in the popup */
+.close {
+  position: absolute;
+  top: 5px; /* Adjust top position as needed */
+  right: 5px; /* Adjust right position as needed */
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}

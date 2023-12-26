@@ -1,0 +1,15 @@
+
+
+.app-banner { 
+	display: flex;
+	justify-content: space-between;
+	background-image: url('https://wallpapercave.com/dwp1x/wp8938218.jpg');
+	align-items: center;
+	background-size: cover;
+
+	color: #e4e7ec;
+	padding: 40px;
+  
+	height: 300px;
+  }
+  
